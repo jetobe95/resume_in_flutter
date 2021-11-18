@@ -62,7 +62,7 @@ class _RightSide extends StatelessWidget {
       children: [
         RichText(
           text: const TextSpan(
-              style: TextStyle(fontSize: 40),
+              style: TextStyle(fontSize: 40, fontFamily: 'Helvetica'),
               text: '',
               children: [
                 TextSpan(
@@ -77,7 +77,14 @@ class _RightSide extends StatelessWidget {
               ]),
         ),
         const SizedBox(height: 20),
-        const Text('Ingeniero Electrónico'),
+        const Text(
+          'Ingeniero Electrónico',
+          style: TextStyle(
+            fontFamily: 'Helvetica',
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         const SizedBox(height: 20),
         const Section(
           title: 'EDUCACIÓN & CURSOS',
@@ -102,10 +109,11 @@ class _MobileLayout extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: Builder(
           builder: (context) {
             return IconButton(
-              icon: const Icon(Icons.menu),
+              icon: const Icon(Icons.menu, color: UIColors.redOrange),
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
@@ -113,8 +121,29 @@ class _MobileLayout extends StatelessWidget {
           },
         ),
       ),
-      drawer: const Drawer(
-        child: _LeftSide(),
+      drawer: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        child: Drawer(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Builder(
+                  builder: (context) {
+                    return IconButton(
+                      icon: const Icon(Icons.close, color: UIColors.redOrange),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                    );
+                  },
+                ),
+                const Center(child: _LeftSide()),
+              ],
+            ),
+          ),
+        ),
       ),
       body: const SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
