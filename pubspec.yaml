@@ -30,6 +30,12 @@ flutter:
       fonts:
         - asset: fonts/HelveticaNeue-Medium.ttf
           weight: 500
+        - asset: fonts/HelveticaNeue.ttf
+          weight: 400
 
   assets:
     - assets/double_diagonal.png
+    - assets/me.png
+    - assets/computer.png
+    - assets/guitar.png
+    - assets/gym.png
