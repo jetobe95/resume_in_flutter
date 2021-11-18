@@ -19,7 +19,7 @@ class AppRouter extends _i2.RootStackRouter {
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
-    ResumeRoute.name: (routeData) {
+    ResumePageRoute.name: (routeData) {
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.ResumePage());
     }
@@ -27,12 +27,12 @@ class AppRouter extends _i2.RootStackRouter {
 
   @override
   List<_i2.RouteConfig> get routes =>
-      [_i2.RouteConfig(ResumeRoute.name, path: '/')];
+      [_i2.RouteConfig(ResumePageRoute.name, path: '/')];
 }
 
 /// generated route for [_i1.ResumePage]
-class ResumeRoute extends _i2.PageRouteInfo<void> {
-  const ResumeRoute() : super(name, path: '/');
+class ResumePageRoute extends _i2.PageRouteInfo<void> {
+  const ResumePageRoute() : super(name, path: '/');
 
-  static const String name = 'ResumeRoute';
+  static const String name = 'ResumePageRoute';
 }
