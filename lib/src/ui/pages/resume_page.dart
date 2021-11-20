@@ -61,41 +61,45 @@ class _RightSide extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         RichText(
-          text: const TextSpan(
-              style: TextStyle(fontSize: 40, fontFamily: 'Helvetica'),
+          text: TextSpan(
+              style: const TextStyle(fontSize: 40, fontFamily: 'Helvetica'),
               text: '',
               children: [
                 TextSpan(
-                  text: 'JEFFREY ',
-                  style: TextStyle(
+                  text: 'name'.tr(),
+                  style: const TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                     color: UIColors.redOrange,
                   ),
                 ),
-                TextSpan(text: 'DANIEL TORRES BELLO'),
+                const TextSpan(text: ' '),
+                TextSpan(text: 'lastname'.tr()),
               ]),
         ),
         const SizedBox(height: 20),
-        const Text(
-          'Ingeniero Electrónico',
-          style: TextStyle(
+        Text(
+          'profession'.tr(),
+          style: const TextStyle(
             fontFamily: 'Helvetica',
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 20),
-        const Section(
-          title: 'EDUCACIÓN & CURSOS',
-          child: EducationAndCourses(),
+        Section(
+          title: 'educationAndCourses'.tr(),
+          child: const EducationAndCourses(),
         ),
         const SizedBox(height: 20),
-        const Section(
-          title: 'EXPERIENCIA & PROYECTOS',
-          child: ExperienceAndProjects(),
+        Section(
+          title: 'experienceProjects'.tr(),
+          child: const ExperienceAndProjects(),
         ),
-        const Section(title: 'REFERENCIAS', child: References()),
+        Section(
+          title: 'references'.tr(),
+          child: const References(),
+        ),
       ],
     );
   }

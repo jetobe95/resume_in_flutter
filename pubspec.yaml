@@ -11,14 +11,15 @@ environment:
 dependencies:
   auto_route: ^3.1.3
   cupertino_icons: ^1.0.2
+  easy_localization: ^3.0.0
   flutter:
     sdk: flutter
   google_fonts: ^2.1.0
 
 dev_dependencies:
-  flutter_lints: ^1.0.0
   auto_route_generator: 3.1.0
   build_runner: 2.1.5
+  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
 
@@ -39,3 +40,4 @@ flutter:
     - assets/computer.png
     - assets/guitar.png
     - assets/gym.png
+    - assets/translations/
