@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume_in_flutter/src/ui/view/skills.dart';
 import 'package:resume_in_flutter/src/ui/widgets/section.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class MyInfo extends StatelessWidget {
   const MyInfo({Key? key}) : super(key: key);
@@ -9,46 +10,31 @@ class MyInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        CircleAvatar(
+      children: [
+        const CircleAvatar(
           backgroundColor: Colors.red,
           foregroundImage: AssetImage('assets/me.png'),
           radius: 57,
         ),
-        SizedBox(height: 32),
+        const SizedBox(height: 32),
         Section(
-          title: 'ACERCA DE MÍ',
-          content: '''Soy Ingeniero Electrónico de profesión.
-
-Actualmente cuento con conocimientos y 3 años de experiencia en desarrollo de aplicaciones con React Native y Flutter. Me gusta hacer testing usando Jest, para asegurar la calidad de mi código
-
-En mi carrera de desarrollador utilizo herramientas como Git, Vscode, Línea de comandos, Postman , Trello y Jira
-
-Amo aprender siempre lo nuevo y tratar de aplicarlo a mi trabajo.''',
+          title: 'myInfo.aboutMe'.tr(),
+          content: 'myInfo.aboutMeContent'.tr(),
         ),
-        SizedBox(height: 32),
+        const SizedBox(height: 32),
         Section(
-          title: 'CONTACTO',
-          content: '''
-Celular
-+57 3164321470
-
-Correo: 
-jeffreyt@uninorte.edu.co
-
-LinkedIn
-https://www.linkedin.com/in/jeffrey-torres-bello-1ab800171/
-''',
+          title: 'contact.title'.tr(),
+          content: 'contact.content'.tr(),
         ),
-        SizedBox(height: 32),
+        const SizedBox(height: 32),
         Section(
-          title: 'HABILIDADES',
-          child: Skills(),
+          title: 'skills.title'.tr(),
+          child: const Skills(),
         ),
-        SizedBox(height: 32),
+        const SizedBox(height: 32),
         Section(
-          title: 'PASATIEMPOS',
-          child: Pasatiempos(),
+          title: 'hobbies'.tr(),
+          child: const Pasatiempos(),
         ),
       ],
     );

@@ -4,5 +4,17 @@
     "profession": "Ingeniero Electrónico",
     "educationAndCourses": "EDUCACIÓN & CURSOS",
     "experienceProjects": "EXPERIENCIA & PROYECTOS",
-    "references": "REFERENCIAS"
+    "references": "REFERENCIAS",
+    "myInfo": {
+        "aboutMe": "ACERCA DE MÍ",
+        "aboutMeContent": "Soy Ingeniero Electrónico de profesión.\n\nActualmente cuento con conocimientos y 3 años de experiencia en desarrollo de aplicaciones con React Native y Flutter. Me gusta hacer testing usando Jest, para asegurar la calidad de mi código\n\nEn mi carrera de desarrollador utilizo herramientas como Git, Vscode, Línea de comandos, Postman , Trello y Jira\n\nAmo aprender siempre lo nuevo y tratar de aplicarlo a mi trabajo."
+    },
+    "contact": {
+        "title": "CONTACTO",
+        "content": "Celular\n+57 3164321470\n\nCorreo:\njeffreyt@uninorte.edu.co\n\nLinkedIn\nhttps://www.linkedin.com/in/jeffrey-torres-bello-1ab800171/"
+    },
+    "skills": {
+        "title": "HABILIDADES"
+    },
+    "hobbies": "PASATIEMPOS"
 }

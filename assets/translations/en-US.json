@@ -1,0 +1,20 @@
+{
+    "name": "JEFFREY",
+    "lastname": "DANIEL TORRES BELLO",
+    "profession": "Electronic Engineer",
+    "educationAndCourses": "EDUCATION & COURSED",
+    "experienceProjects": "EXPERIENCIA & PROJECTS",
+    "references": "REFERENCES",
+    "myInfo": {
+        "aboutMe": "ABOUT ME",
+        "aboutMeContent": "I am an Electronic Engineer by profession.\n\nCurrently I have knowledge and 3 years of experience in application development with React Native and Flutter. I like to test using Jest, to ensure the quality of my code\n\nIn my development career I use tools such as Git, Vscode, Command Line, Postman, Trello and Jira\n\nI love to always learn the new and try to apply it to my work."
+    },
+    "contact": {
+        "title": "CONTACT",
+        "content": "Mobile\n+57 3164321470\n\nEmail:\njeffreyt@uninorte.edu.co\n\nLinkedIn\nhttps://www.linkedin.com/in/jeffrey-torres-bello-1ab800171/"
+    },
+    "skills": {
+        "title": "SKILLS"
+    },
+    "hobbies": "HOBBIES"
+}

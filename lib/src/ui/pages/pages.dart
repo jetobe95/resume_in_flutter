@@ -1,5 +1,6 @@
 library resume.pages;
 
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:resume_in_flutter/src/ui/theme/uicolors.dart';
 import 'package:resume_in_flutter/src/ui/view/education_and_courses.dart';

@@ -1,8 +1,8 @@
 part of resume.pages;
 
 class ResumePage extends StatelessWidget {
-  const ResumePage({Key? key}) : super(key: key);
-
+  const ResumePage({Key? key, @QueryParam('lang') this.lang}) : super(key: key);
+  final String? lang;
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
